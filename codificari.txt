@@ -1,0 +1,17 @@
+Ce codificari din DB folosim
+
+user:
+	tip:
+		1 - user normal
+		2 - admin
+		3 - eventual operator telefonic
+cos:
+	status:
+		1 - inca in cos
+		2 - cos golit sau comanda finalizata
+comanda:
+	status:
+		1 - comanda in asteptarea procesarii
+		2 - comanda in curs de livrare
+		3 - comanda livrata
+		4 - comanda anulata

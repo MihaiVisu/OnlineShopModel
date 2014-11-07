@@ -1,0 +1,14 @@
+
+//fisierul asta e facut ca sa putem comunica cand nu suntem amandoi online
+//sorteaza-ti in Fzilla dupa data modificarii sa vezi cand e ceva nou in asta
+
+// no bun
+
+La cos tu faci buton cu un mic form cu cantitate si un imput hidden cu obiect_id pe care esti,
+ca imi trebe. la action ii dai "adauga_in_cos.php". Si mai trebe sa fii logat, uitete un pic 
+peste adauga_in_cos.php la variabila $user, cu session, si la header. si asa si la goleste_cos
+si finalizeaza_comanda. eventual la finalare poti sa ii intrebi daca sigur vor sa finalizeze
+
+Si la cos nu mai punem status, cand dai golire cos sau finalizare comanda pur si simplu stergem 
+intrarile din DB
+

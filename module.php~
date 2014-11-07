@@ -1,0 +1,44 @@
+
+<?php
+	//Conectare la baza de date + session_start//
+	error_reporting(E_ALL ^ E_NOTICE);
+	$link = mysql_connect('localhost', 'root', '');
+	if (!$link) {
+          die("conectare nereusita");
+	}
+	mysql_select_db("tml_tractorii",$link);
+	session_start();
+	function Conectat()
+	{
+		 if(isset($_SESSION['user']))
+		 		return TRUE;
+			return FALSE;													 
+		 
+	}
+	
+	
+	function create_dir($path)              // creaza director cu locatia $path
+	{	
+		if(!mkdir($path, 0777));
+			return false;
+	}
+	
+	
+	function create_object_search_result($object_id,$object_nume,$object_pret) // creaza un tabel cu obiecte
+	{
+		$image_path = "imagine/obiect/".(string)$object_id."_thumb.jpg";
+		
+		echo "<table>
+				<tr>
+					<td>
+						<img src=".$image_path."> 
+					</td>
+					<td>".$object_nume."</td>
+					<td>".$object_pret."</td>
+					
+				</tr>
+				</table> ";
+	}
+	
+///////////FUNCTIE DE AFISARE OBIECTE///////////////
+

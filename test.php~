@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Tractorii.ro</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.22" />
+	<style>
+		.shadow {
+			position:fixed;
+			margin:0;
+			padding:0;
+			width:100%;
+			top:0;
+			left:0;
+	background-color: rgb(68,68,68);
+	-moz-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	-webkit-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70)";
+	z-index:4;
+}
+.headbar
+{
+	position: relative; 
+	padding-top: 1px;
+	padding-bottom: 5px;
+	width:100%;
+	left:0;
+	right:0;
+	height:90px;
+	background-image: -webkit-linear-gradient(#696969, #000000);
+	background-image: -moz-linear-gradient(top,#696969, #000000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000')";
+	background-image: -ms-linear-gradient(#696969, #000000);
+	background-image: -o-linear-gradient(#696969, #000000);
+	background-image: linear-gradient(#696969, #000000);
+	z-index:4;
+}
+#profile
+{
+	position:absolute;
+	right:0;
+	top:0;
+	width:auto;
+	background-color:white;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	line-height:80%;
+}
+#profile a
+{
+	color:black;
+	text-decoration:none;
+}
+.main_shadow
+{
+	margin-left:33%;
+	width:50%;
+	min-width:550px;
+	background-color: rgb(68,68,68);
+	-moz-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	-webkit-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70)";
+	z-index:-1;
+	margin-bottom:20px;
+}
+.main_div
+{
+	background-color:white;
+	position:relative;
+	padding-bottom:1px;
+	z-index:0;
+}
+#menubar
+{
+	position:relative;
+	background-color:black;
+	color:white;
+	font-family:Helvetica;
+	padding:2px;
+	font-size:16px;
+	z-index:0;
+}
+.menu_shadow
+{
+	position:absolute;
+	bottom:-21px;
+	background-color: rgb(68,68,68);
+	-moz-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	-webkit-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70)";
+	z-index:0;
+}
+#menubar a
+{
+	color:white;
+	font-family:Helvetica;
+	text-decoration:none;
+}
+#menubar a:hover
+{
+	color:#96E843;
+	background-color:gray;
+}
+#menubar span:hover
+{
+	cursor:pointer;
+	color:#96E843;
+	background-color:gray;
+}
+#title
+{
+	font-family:Helvetica;
+	color:#53CF29;
+	padding:0;
+	line-height:40%;
+	font-size:28px;
+}
+#leftdiv_shadow
+{
+	background-color: rgb(68,68,68);
+	-moz-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	-webkit-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70)";
+	z-index:3;
+}
+#leftdiv_content
+{
+	position:relative;
+	padding:1px;
+	background-image: -webkit-linear-gradient(#696969, #000000);
+	background-image: -moz-linear-gradient(top,#696969, #000000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000')";
+	background-image: -ms-linear-gradient(#696969, #000000);
+	background-image: -o-linear-gradient(#696969, #000000);
+	background-image: linear-gradient(#696969, #000000);
+	color:white;
+	border:0;
+	z-index:3;
+}
+#leftdiv_title
+{
+	padding-top:1px;
+	background-image: -webkit-linear-gradient(#14A714, #005200);
+	background-image: -moz-linear-gradient(top,#14A714, #005200);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#14A714', endColorstr='#005200');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#14A714', endColorstr='#005200')";
+	background-image: -ms-linear-gradient(#14A714, #005200);
+	background-image: -o-linear-gradient(#14A714, #005200);
+	background-image: linear-gradient(#14A714, #005200);
+	z-index:0;
+	
+}
+#rightdiv_shadow
+{
+	margin-top:15px;
+	background-color: rgb(68,68,68);
+	-moz-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	-webkit-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70)";
+	z-index:3;
+}
+#leftdiv_content ul #ul_shadow
+{
+	display:none;
+	position:absolute;
+	left:100%;
+	background-color: rgb(68,68,68);
+	-moz-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	-webkit-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70)";
+	min-width:180px;
+	z-index:999;
+}
+#leftdiv_content ul ul
+{
+	position:relative;
+	background-image: -webkit-linear-gradient(#696969, #000000);
+	background-image: -moz-linear-gradient(top,#696969, #000000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000')";
+	background-image: -ms-linear-gradient(#696969, #000000);
+	background-image: -o-linear-gradient(#696969, #000000);
+	background-image: linear-gradient(#696969, #000000);
+	padding:0px;
+	list-style:none;
+	z-index:3;
+}
+#leftdiv_content>ul
+{
+	list-style:none;
+	position:relative;
+	left:-18px;
+}
+#leftdiv_content ul li:hover #ul_shadow
+{
+	display:inline;
+}
+#leftdiv_content ul li
+{
+	position:relative;
+	padding-left:5px;
+	padding-right:5px;
+	display:block;
+	border-bottom:1px solid gray;
+	border-top:1px solid black;
+}
+#leftdiv_content ul li:hover
+{
+	cursor:pointer;
+	background-color:gray;
+	color:#96E843;
+}
+
+#leftdiv_content ul li:hover a
+{
+	color:#96E843;
+}
+#leftdiv_content ul>li:hover ul a
+{
+	color:white
+}
+#leftdiv_content ul ul li:hover a
+{
+	color:#96E843;
+}
+#leftdiv_content ul li a
+{
+	text-decoration:none;
+	color:white;
+	position:relative;
+	display:block;
+}
+}#leftdiv_content ul ul a
+{
+	text-decoration:none;
+	color:white;
+	position:relative;
+}
+#leftdiv_content ul a:hover
+{
+	text-decoration:underline;
+}
+#leftbar
+{
+	position:absolute;
+	top:240px;
+	left:10px;
+}
+.message_shadow
+{
+	margin-top:190px;
+	margin-left:33%;
+	width:50%;
+	min-width:550px;
+	background-color: rgb(68,68,68);
+	-moz-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	-webkit-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70)";
+	z-index:-1;
+	margin-bottom:20px;
+}
+.message_content
+{
+	background-color:white;
+	<?php 
+	if ( isset($_SESSION["mesaj"]) )
+	{
+		echo 'color:red;';
+	}
+	else if ( isset($_SESSION["introdus"]) )
+	{
+		echo 'color:green;';
+	}?>
+	font-family:helvetica;
+}
+.search_shadow
+{
+	position:absolute;
+	bottom:-24px;
+	right:0px;
+	background-color: rgb(68,68,68);
+	-moz-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	-webkit-box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	box-shadow: 0px 5px 5px rgba(68,68,68,1.0);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=6,MakeShadow=true,ShadowOpacity=0.70)";
+	z-index:0;
+}
+.search_shadow button
+{
+	color:white;
+	background-color:transparent;
+	font-family:Helvetica;
+	text-decoration:none;
+}
+.search_shadow button:hover
+{
+	background-color:gray;
+	color:#96E843;
+}
+.search_shadow input
+{
+	height:20px;
+}
+</style>
+</head>
+
+<body background="Missing.jpg">
+	<div class="shadow">
+		<div class="headbar">
+			<table>
+				<tr><td valign="top" cellpadding="0" style="padding-right:30px; padding-left:10px;"><img src="Logo.png" width="95" height="95"></td>
+				<td cellpadding="0">
+					<h1 id="title">Tractorii.ro</h1>
+					<h4 style="color:#96E843; padding-left:16px; font-family:Helvetica;">Magazin online</h4>
+				</td>
+			</table>
+			
+			<div class="menu_shadow">
+				<div id="menubar">
+					<span><a  style="padding-right:15px;padding-left:5px;" href="index.php">Acasa</a></span>
+					<?php if ( !isset($_SESSION["connected"]) ){?>
+					<span><a style="padding-right:15px;padding-left:5px;" href="pregister.php">Inregistrare</a></span><?php } ?>
+					<span><a style="padding-right:15px;padding-left:5px;" href="contact.php">Contact</a></span>
+				</div>
+			</div>
+			<div class="search_shadow">
+				<div id="menubar">
+					<form action="search.php" method="GET">
+						<input type="text" name="searchingfor" width="">
+						<button type="submit" value="Cauta" style="margin-right:2px;">Cauta produs</button>
+					</form>
+				</div>
+			</div>
+			<div id="profile" align="right">
+				<?php 
+				if ( isset($_SESSION["connected"]) )
+				{ ?>
+					<table cellpadding="6">
+						<tr>
+							<td align="right" style="font-family:Arial;">Nume Utilizator:</td>
+							<td align="left"><a href="account.php" style="font-family:Arial; color:blue;"><b><?php echo $_SESSION["user"]; ?></b></a></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="left"><a href="logout.php"><img src="logout.png" title="Deconecteaza-te" width="40" height="40"></a><?php 
+						if ( $_SESSION['statut']==1 ){echo '<a href="cosul_meu.php"><img src="cosul_meu.png" width="40" height="40" title="Cosul meu"></a>';
+													  echo '<a href="comenzile_mele.php"><img src="bills.png" width="40" height="40" title="Comenzile mele"></a>';}?></td>
+						</tr>
+					</table>
+		  <?php }
+				else
+				{?>
+					<table>
+			<form method="post" action="login.php">
+				<tr>
+					<td>Nume Utilizator:</td>
+					<td><input type="text" name="user" id="User"></td>
+				</tr>
+				<tr>
+					<td>Parola:</td>
+					<td><input type="password" name="password" id="Pw"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+						<button type="submit" value="Conecteaza-te">Conecteaza-te</button>
+					</td>
+				</tr>
+			</form>
+		</table>
+				<?php } ?>
+			</div>
+		</div>
+	</div>
+	<div id="leftbar">
+	<div id="leftdiv_shadow">
+		<div id="leftdiv_content" align="left">
+			<div id="leftdiv_title">
+				<h4 style="color:white; font-family:Helvetica; line-height:50%;" align="center">Produse</h4>
+				<hr>
+			</div>
+			<ul>
+				<?php
+				$r = mysql_query("SELECT *FROM categorie");
+				while ( $sol = mysql_fetch_array($r) )
+				{
+					echo '<li>» '.$sol["NUME"];
+					echo '<div id="ul_shadow"><ul>';
+					$id = $sol["ID"];
+					$q = mysql_query("SELECT *FROM subcategorie WHERE CATEGORIE_ID='$id'");
+					while ( $afis = mysql_fetch_array($q) )
+					{
+						echo '<li><a href="afis_obiecte.php?ob='.$afis["ID"].'">» '.$afis["NUME"].'</a>';
+					}
+					echo '</ul></div></li>';
+				}?>
+			</ul>
+		</div>
+	</div>
+	<?php if (isset($_SESSION["connected"]) && $_SESSION["statut"]!=1 ){ // Prima data verific daca sunt conectat;?>
+	<div id="rightdiv_shadow">
+		<div id="leftdiv_content">
+			<div id="leftdiv_title">
+				<h4 style="color:white; font-family:Helvetica; line-height:50%;" align="center">Optiuni</h4>
+				<hr>
+			</div><?php
+			$nr_neefectuate = mysql_query("SELECT * FROM comanda WHERE STATUS = '1' OR STATUS='2' "); 
+			if ( $_SESSION["statut"] == 2 )
+			{
+				/* COMENZI ADMIN + OPERATOR TELEFONIC */
+				echo '<ul><li><a href="editeaza_categorii.php">Editeaza categorii</a></li><li><a href="editeaza_subcategorii.php">Editeaza subcategorii</a></li>';
+				echo '<li><a href="editeaza_obiecte.php">Adauga obiect</a></li>';
+				echo '<li><a href="comenzi_in_asteptare.php">Comenzi neefectuate <b>('.mysql_num_rows($nr_neefectuate).')</b></a></li>';
+				echo '<li><a href="istoric_comenzi.php">Istoric comenzi</a></li>';
+				echo '<li><a href="operator_telefonic.php">Creeaza operator</a></li>';
+				echo '<li><a href="mesaje_clienti.php">Mesaje clienti</a></li></ul>';
+			}
+			else if ( $_SESSION["statut"] == 3 )
+			{
+				echo '<ul><li><a href="comenzi_in_asteptare.php">Comenzi neefectuate <b>('.mysql_num_rows($nr_neefectuate).')</b></a></li>';
+				echo '<li><a href="istoric_comenzi.php">Istoric comenzi</a></li>';
+				echo '<li><a href="mesaje_clienti.php">Mesaje clienti</a></li></ul>';
+			}?>
+		</div>
+	</div>
+	<?php } ?>
+	</div>
+	<div class="message_shadow">
+		<div class="message_content">
+			<h4 style="display:block;" align="center"><?php
+				echo $_SESSION["introdus"];
+				echo $_SESSION["mesaj"];
+				unset($_SESSION["mesaj"]);
+				unset($_SESSION["introdus"]);?>
+			</h4>
+		</div>
+	</div>
+<script>
+	$("#profile").corner("bl 18px");
+	$("#menubar,.search_shadow").corner("bottom");
+	$(".menu_shadow").corner("bottom");
+	$("#ul_shadow, #ul_shadow ul" ).corner();
+	$("span").corner();
+	$("a,li").corner();
+	$("input[name='searchingfor']").corner("8px");
+	$("#leftdiv_shadow, #leftdiv_content, #leftdiv_title, #rightdiv_shadow").corner("top");
+	$("button[value='Cauta']").corner("8px");
+	$(".message_shadow,.message_content").corner();
+	$(".main_div a").corner();
+</script>
+</body>
+
+</html>

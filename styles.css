@@ -1,0 +1,186 @@
+#popBox
+{
+	z-index:10;
+	position:fixed;
+	top:-8px;
+	left:-8px;
+	width:105%;
+	height:105%;
+	background:black;
+	opacity:0.75;
+	filter:alpha(opacity=75);
+	display:none;
+}
+#jsattention /*popUp-ul pentru dezactivarea javascriptului*/
+{
+	z-index:1;
+	position:fixed;
+	left:25%;
+	right:25%;
+	bottom:20%;
+	top:20%;
+	background:gray;
+	min-width:600px;
+	min-height:400px;
+}
+#RecoveryTD
+{
+	display:none;
+}
+#loginBox
+{	
+	z-index:11;
+	position:fixed;
+	left:34%;
+	top:25%;
+	height:280px;
+	width:450px;
+	background:gray;
+	display:none;
+}
+#loginTable
+{
+	position:absolute;
+	top:33%;
+	left:2%;
+
+}
+#registerBox
+{
+	z-index:11;
+	position:fixed;
+	left:30%;
+	width:640px;
+	top:15%;
+	height:470px;
+	background:gray;
+	display:none;
+}
+#registerTable
+{
+	position:absolute;
+	top:20%;
+	left:2%;
+}
+#registerButton
+{
+	background:transparent;
+	width:auto;
+	family-font:Calibri;
+	color:red;
+	border:0;
+	cursor:pointer;
+}
+input /*setez bordura inputurilor */
+{
+	border:1px solid gray;
+}
+#errors
+{
+	color:red;
+	family-font:calibri;
+	font-size:12;
+}
+#rec_errors
+{
+	color:red;
+	family-font:calibri;
+	font-size:12;
+}
+#data_h3
+{
+	display:block; 
+	position:relative; 
+	left:-40px;
+	z-index:-1;
+	min-width:500px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	background-image: -webkit-linear-gradient(#696969, #000000);
+	background-image: -moz-linear-gradient(top,#696969, #000000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000')";
+	background-image: -ms-linear-gradient(#696969, #000000);
+	background-image: -o-linear-gradient(#696969, #000000);
+	background-image: linear-gradient(#696969, #000000);
+	color:#96E843;
+	font-family:Helvetica, Sans-Serif;
+	font-size:16px;
+	border-left:3px solid #96E843;
+}
+.cos
+{
+	display:none;
+	float:right;
+	text-decoration:none;
+}
+.over:hover
+{			
+	background-color:#E3E3E3;
+}
+.over:hover .cos
+{
+	display:inline;
+}
+.main_div a
+{
+	text-decoration:none;
+	color:blue;
+	font-size:15;
+	font-family:helvetica;
+	padding-right:2px;
+	padding-left:2px;
+}
+.main_div a:hover
+{
+	color:#96E843;
+	background-color:gray;
+}
+.main_div h3>a
+{
+	color: #96E843;
+	background-color:none;
+}
+#comment_h3
+{
+	display:block; 
+	position:relative; 
+	left:-40px;
+	z-index:-1;
+	min-width:500px;
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:10px;
+	background-image: -webkit-linear-gradient(#14A714, #005200);
+	background-image: -moz-linear-gradient(top,#14A714, #005200);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#14A714', endColorstr='#005200');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#14A714', endColorstr='#005200')";
+	background-image: -ms-linear-gradient(#14A714, #005200);
+	background-image: -o-linear-gradient(#14A714, #005200);
+	background-image: linear-gradient(#14A714, #005200);
+	font-family:Helvetica, Sans-Serif;
+	font-size:16px;
+	color:white;
+}
+#add_h3
+{
+	display:block; 
+	position:relative; 
+	left:-40px;
+	z-index:-1;
+	min-width:500px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	background-image: -webkit-linear-gradient(#696969, #000000);
+	background-image: -moz-linear-gradient(top,#696969, #000000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#000000')";
+	background-image: -ms-linear-gradient(#696969, #000000);
+	background-image: -o-linear-gradient(#696969, #000000);
+	background-image: linear-gradient(#696969, #000000);
+	font-family:Helvetica, Sans-Serif;
+	font-size:16px;
+	color:white;
+}
